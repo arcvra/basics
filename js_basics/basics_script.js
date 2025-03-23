@@ -15,3 +15,24 @@ const dataStructures = [
     { Set: { definition: "Colección de valores únicos.", example: "new Set([1, 2, 3])" } },
     { Map: { definition: "Colección clave-valor con claves únicas.", example: "new Map([[1, 'uno']])" } }
 ];
+
+
+// Tipos de comparadores: asignación, igualdad e igualdad estricta:
+
+// 🔹 1️⃣ Asignación (=) No compara valores, únicamente los asigna
+let a = 5;  // Asigna el valor 5 a la variable 'a'
+let b = "5";
+
+// 🔹 2️⃣ Comparación débil (==) Sí compara valores pero ignora el tipo de dato
+console.log(a == b); // true
+console.log(0 == false); // true
+console.log(null == undefined); // true
+
+/* 
+🔹 3️⃣ Comparación estricta (===) 
+* Compara tanto el valor como el tipo de dato
+* Es la mejor opción a seguir para evitar errores 
+*/
+console.log(a === b); // false
+console.log(0 === false); // false
+console.log(null === undefined); // false
