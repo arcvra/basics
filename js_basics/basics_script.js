@@ -16,6 +16,8 @@ const dataStructures = [
     { Map: { definition: "Colección clave-valor con claves únicas.", example: "new Map([[1, 'uno']])" } }
 ];
 
+// ----------------------------------------------------------------------------------- //
+// ----------------------------------------------------------------------------------- //
 
 // Tipos de comparadores: asignación, igualdad e igualdad estricta:
 
@@ -36,3 +38,34 @@ console.log(null == undefined); // true
 console.log(a === b); // false
 console.log(0 === false); // false
 console.log(null === undefined); // false
+
+
+// 🔹 4️⃣ Comparadores de desigualdad
+console.log(10 != "10"); // false (conversión implícita)
+console.log(10 !== "10"); // true (verifica tipo y valor)
+
+/* 
+🔹 5️⃣ Comparadores de mayor y menor
+* Comparan números y strings basados en el orden lexicográfico (ABC...)
+*/
+console.log(10 > 5);  // true
+console.log(3 <= 3);  // true
+console.log("apple" > "banana"); // false ('a' tiene menor valor Unicode que 'b')
+
+// ----------------------------------------------------------------------------------- //
+// ----------------------------------------------------------------------------------- //
+
+// Operadores lógicos: AND, OR, NOT
+
+// 🔹 6️⃣ AND lógico (&&) → Devuelve true solo si AMBOS valores son verdaderos
+console.log(true && false); // false
+console.log(5 > 3 && 10 < 20); // true
+
+// 🔹 7️⃣ OR lógico (||) → Devuelve true si AL MENOS UNO es verdadero
+console.log(false || true); // true
+console.log(5 > 10 || 10 > 5); // true
+
+// 🔹 8️⃣ NOT lógico (!) → Invierte el valor booleano
+console.log(!true); // false
+console.log(!0); // true
+console.log(!!"texto"); // true (doble negación convierte a booleano)
