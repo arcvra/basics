@@ -73,3 +73,31 @@ En un programa con múltiples tipos de personajes, es probable que cada uno teng
 Tomemos nuestra clase base `Character`, que tiene un método `atacar()` ya definido. Decidimos crear dos subclases: `Bárbaro` y `Healer`, cada una con su propia versión de `atacar()`. Podríamos crear un método extra para cada uno de ellos, como `garrote()` o `hemomancia()` aparte del ya presente `atacar()`, aunque realmente ambos realizan la misma acción: atacar. Gracias al polimorfismo esto no es necesario. Simplemente reescribimos cómo funciona `atacar()` a la hora de definir cada subclase. De este modo, cuando llamamos al método `atacar()` en un objeto `Bárbaro`, se ejecutará su versión del ataque. Lo mismo sucederá con `Healer`, sin necesidad de crear métodos con nombres distintos.
 
 El polimorfismo nos permite trabajar con un código más limpio, organizado y fácil de extender sin afectar la estructura principal del programa o forzarnos a mantener código que no vamos a utilizar.
+
+## Patrón Factory
+
+El **Factory Pattern** es un _patrón de diseño_ en el que se encapsula la lógica de creación de objetos en una función o clase, en lugar de instanciarlos directamente con new. Esto puede resultar útil en ciertos escenarios:
+
+* Si queremos que la creación de objetos sea más flexible y e independiente de la implementación concreta
+* En casos en los  que existen múltiples tipos de objetos con una estructura similar, pero con suficientes diferencias en su configuración
+* Cuando buscamos centralizar la lógica de creación para evitar repetir código
+
+### Ejemplo: creación de objetos mediante patrón factory
+
+Anteriormente hemos creado nuestra clase `Character` como base, a partir de la cual hemos creado las subclases `Bárbaro` y `Healer`. En lugar de instanciar estas clases directamente en el código
+
+```js
+const foo = createCharacter(Barbaro, 'Foo');
+const foo2 = createCharacter(Healer, 'Foo2');
+```
+
+utilizamos una _función Factory_ llamada `createCharacter`. Esta función recibe como **parámetros** el tipo de personaje y su nombre, y se encarga de _devolver una instancia_ de la subclase correspondiente.
+
+```js
+const foo = createCharacter('Barbaro', 'Foo');
+const foo2 = createCharacter('Healer', 'Foo2');
+```
+
+De este modo, si solicitamos un nuevo `Bárbaro`, la función creará y **devolverá una instancia de la clase Bárbaro**, y si se solicita un `Healer`, devolverá una **instancia de Healer**. En caso de que el tipo de personaje no coincida con ninguna subclase específica, se devolverá una instancia genérica de Character (u otra configuración personalizada).
+
+Gracias a este enfoque se abstrae la _lógica_ de creación y se facilita la _expansión del sistema_, permitiendo añadir nuevos tipos de personajes sin modificar el código que los utiliza.
