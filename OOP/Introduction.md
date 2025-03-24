@@ -61,3 +61,15 @@ Cuando priorizamos la capacidad de nuestro sistema para crecer o adaptarse a nue
 Además de los personajes normales, ahora queremos añadir una nueva clase para un tipo especial de personajes: los Healers. Estos tienen habilidades de curación, una acción que no se incluye en los métodos de nuestra clase `Character` original. En lugar de escribir todo el código de nuevo, podemos crear una nueva clase `Healer` que herede las características de `Character` y añada nuevos métodos o propiedades, como `curar()`.
 
 Al adoptar la OOP nos encontramos con que no hace falta re-escribir la clase desde cero, siguiendo así el concepto de **mantenimiento**, y al **encapsular** el nuevo tipo de personajes en una clase independiente favorecemos la **abstracción** de los métodos nuevos.
+
+## Polimorfismo
+
+El polimorfismo es uno de los principios fundamentales de la OOP: permite escribir código más flexible y reutilizable. ¿Cómo? Al permitir que diferentes clases implementen el mismo método de manera personalizada. Si bien hemos hablado de la importancia de mantener una misma "plantilla" o "molde" para todos los objetos, en ocasiones necesitamos que una subclase herede atributos y métodos, pero modificando su comportamiento sin alterar la estructura general.
+
+En un programa con múltiples tipos de personajes, es probable que cada uno tenga una forma distinta de realizar ciertas acciones. Por ejemplo, tanto un Bárbaro como un Healer pueden atacar, pero la forma en que lo hacen es diferente. En lugar de definir un método de ataque distinto para cada clase, podemos aprovechar el polimorfismo para sobrescribir (o modificar) el comportamiento de un método ya existente en una subclase.
+
+### Ejemplo: redefiniendo métodos en subclases
+
+Tomemos nuestra clase base `Character`, que tiene un método `atacar()` ya definido. Decidimos crear dos subclases: `Bárbaro` y `Healer`, cada una con su propia versión de `atacar()`. Podríamos crear un método extra para cada uno de ellos, como `garrote()` o `hemomancia()` aparte del ya presente `atacar()`, aunque realmente ambos realizan la misma acción: atacar. Gracias al polimorfismo esto no es necesario. Simplemente reescribimos cómo funciona `atacar()` a la hora de definir cada subclase. De este modo, cuando llamamos al método `atacar()` en un objeto `Bárbaro`, se ejecutará su versión del ataque. Lo mismo sucederá con `Healer`, sin necesidad de crear métodos con nombres distintos.
+
+El polimorfismo nos permite trabajar con un código más limpio, organizado y fácil de extender sin afectar la estructura principal del programa o forzarnos a mantener código que no vamos a utilizar.
