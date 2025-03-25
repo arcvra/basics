@@ -46,7 +46,7 @@ Con la abstracción, el código se hace más sencillo de usar y de entender.
 
 Similar a la **abstracción**, el encapsulamiento hace referencia a la idea de mantener los detalles internos de un objeto privados y únicamente exponer lo necesario a través de métodos públicos. Esto evita que otras partes del código manipulen directamente los datos internos de un objeto, lo que puede causar errores o inconsistencias.
 
-> A diferencia de la abstracción, cuyo objetivo es faclitar el uso de métodos sin necesidad de supervisar su funcionamiento interno, el objetivo de la abstracción es evitar la manipulación de los datos internos por parte de un tercero en otra parte del código. De ahí el concepto de "privacidad" en oposición a métodos "públicos". De esta forma se garantiza la integridad del objeto a lo largo de su ciclo de vida.
+> A diferencia de la abstracción, cuyo objetivo es faclitar el uso de métodos sin necesidad de supervisar su funcionamiento interno, el objetivo del encapsulamiento es evitar la manipulación de los datos internos por parte de un tercero en otra parte del código. De ahí el concepto de "privacidad" en oposición a métodos "públicos". De esta forma se garantiza la integridad del objeto a lo largo de su ciclo de vida.
 
 #### Ejemplo: encapsulamiento de propiedades
 
