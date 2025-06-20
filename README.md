@@ -16,7 +16,7 @@ Este repositorio está destinado a principiantes que deseen aprender y practicar
 
     - Exploración de los métodos más comunes de arrays y objetos en JavaScript.
 
-    - Ejemplos prácticos con explicaciones sobre cómo manipular y recorrer arrays y objetos usando métodos como map(), filter(), reduce(), Object.keys(), Object.values(), entre otros.
+    - Ejemplos prácticos con explicaciones sobre cómo manipular y recorrer arrays y objetos usando métodos como `map()`, `filter()`, `reduce()`, `Object.keys()`, `Object.values()`, entre otros.
 
 3. Condicionales y Estructuras de Control
 
