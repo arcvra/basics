@@ -12,27 +12,27 @@ Este repositorio está destinado a principiantes que deseen aprender y practicar
 
     - Ejemplos sencillos y explicaciones concisas para asegurar un buen entendimiento de su aplicación y sintaxis en JavaScript.
 
-2. Métodos de Arrays y Objetos
+2. Métodos de **Arrays y Objetos**
 
     - Exploración de los métodos más comunes de arrays y objetos en JavaScript.
 
     - Ejemplos prácticos con explicaciones sobre cómo manipular y recorrer arrays y objetos usando métodos como `map()`, `filter()`, `reduce()`, `Object.keys()`, `Object.values()`, entre otros.
 
-3. Condicionales y Estructuras de Control
+3. **Condicionales** y **Estructuras de Control**
 
-    - Ejemplos de cómo usar condicionales (if, else, else if, switch-case) para manejar flujos de control en tu código.
+    - Ejemplos de cómo usar *condicionales* (if, else, else if, switch-case) para manejar flujos de control en tu código.
 
-    - Explicación de operadores ternarios y cuándo usarlos de manera efectiva.
+    - Explicación de *operadores ternarios* y cuándo usarlos de manera efectiva.
 
-4. Introducción a la Programación Orientada a Objetos (OOP)
+4. Introducción a la **Programación Orientada a Objetos** (OOP)
 
-    - Explicación de los principios clave de la Programación Orientada a Objetos:
+    - Explicación de los **principios clave** de la Programación Orientada a Objetos:
 
         - Modularidad, organización y reutilización del código.
 
         - Mantenimiento, abstracción, encapsulamiento y escalabilidad.
 
-    - Polimorfismo: Sobrescritura de métodos en subclases para crear código flexible y reutilizable.
+    - **Polimorfismo**: Sobrescritura de métodos en subclases para crear código flexible y reutilizable.
 
 ## Estructura del Repositorio
 
