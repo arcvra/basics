@@ -36,6 +36,7 @@ Este repositorio está destinado a principiantes que deseen aprender y practicar
 
 ## Estructura del Repositorio
 
+```text
 WEBDEV-BASICS/
 ├─ OOP/
 │  ├─ Introduction.md       # Introducción a la programación orientada a objetos (OOP).
@@ -54,6 +55,7 @@ WEBDEV-BASICS/
 ├─ .gitignore               # Exclusión de node_modules/ (aplicación futura)
 ├─ README.md
 ├─ LICENSE.md               # Licencia MIT
+```
 
 > Como podrás ver, la carpeta client/ no tiene contenido destacado. Esto es porque el repositorio está aún en proceso y la documentación que concierne al cliente aún está en desarrollo.
 > Está planificado agregar una carpeta backend/ con documentación y ejemplos adicionales.
